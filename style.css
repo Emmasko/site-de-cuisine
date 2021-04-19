@@ -1,0 +1,388 @@
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    height: auto;
+    overflow-x: hidden;
+    box-shadow: 5px 5px 5px black;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+    margin: 0;
+    color: white;
+}
+
+h1 {
+    font-size: 250%;
+    
+}
+
+h2 {
+    font-size: 150%;
+    
+}
+
+main h1 {
+    color: #fff;
+}
+
+img {
+    display: block; /* PAS D'ECRITURE A COTE DES IMAGES */
+    width: 100%;
+}
+
+.main-content-flex, .main-text-img, .caption, footer {
+    text-align: center;
+}
+/* POUR FAIRE DES MARGES ET CENTRER LA PAGE */
+main {
+    max-width: 1220px;
+    margin: auto;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); /* POUR FAIRE UN CADRE */
+
+}
+
+/*PARTIE HAUTE HEADER*/
+
+.main-content {
+    background-color: slategray;
+
+}
+.main-content-text a {
+    color: #fff;
+}
+
+.main-content-flex {
+    display: flex;
+    flex: 0 1 40vw; /*VIEWPORT à 40% Largeur de la partie droite*/
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main-content-img {
+    background: url(images/platamerique.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 50vw; /* Largeur que prend l'image */
+    margin: 0;
+}
+
+.btn {
+    padding: 10px 70px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin: 20px 0;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    position:relative;
+    
+    
+    
+}
+.btn:hover {
+    background: white;
+    color: black;
+
+}
+
+.rech {
+    margin-top: 20px;
+}
+
+/*PARTIE BASSE */
+
+
+
+
+
+
+
+
+  
+
+.container button {
+    color: white;
+    left: 25%;
+    border-width:1px;
+    box-shadow: 3px 3px 3px black;
+    margin-left: 30%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+
+}
+
+.col-md-4 p{
+    text-align: justify;
+    width: 280px;
+    
+    
+}
+.col-md-4 img {
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+}
+
+ /*Styles spécifiques pour les écrans de taille moyenne type tablette*/
+@media screen and (max-width: 700px) {
+    .col-md-4 img {
+        display: flex;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .col-md-4 img {
+        display: flex;
+    }
+  }
+
+.col-md-4 button {
+            background-color: #ba3627;
+            color: #ffff;
+}
+
+
+.col-md-4 button:hover {
+            background-color: #ba3627;
+            
+}
+
+
+.main-text-img {
+    padding: 16px;
+    background: #333;
+    color: white;
+}
+
+.caption {
+    padding: 12px;
+}
+
+
+
+
+
+
+
+/*Footer*/
+
+footer {
+    padding: 15px 10px;
+    margin: auto;
+    color: rgb(59, 59, 59);
+}
+
+footer h3 {
+    font-size: 200%;
+    color: gray;
+}
+
+.footer-text {
+    font-weight: bold;
+}
+
+hr {
+    width: 50%;
+    color: rgb(199, 199, 199); /* POUR METTRE UN TRAIT APRES CONTACT */
+}
+
+/* media queries */
+
+@media (min-width: 750px) {
+    .main-content {
+        display: flex;
+        height: 100%;
+    }
+    .main-content-flex {
+        height: 100vh;
+    }
+    .main-content-img {
+        height: 100vh;
+    }
+
+}
+
+
+/*PAGE INDEX-A */
+
+#conteneur {
+    position:relative;
+    height: 500px;
+    width:50vw;
+    
+
+}
+#conteneur img {
+    position:absolute;
+    left:0;
+    height: 90%;
+    width:100vw;  
+}
+@keyframes fondu-in-out {
+    0%    { opacity:1; }
+    25%   { opacity:1; }
+    75%   { opacity:0; }
+    100%  { opacity:0; }
+}
+#conteneur img.image-de-dessus {
+    animation-name: fondu-in-out;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+.texte {
+    margin-left: 10%;
+    margin-right: 9.6%;
+    text-align: justify;
+}
+
+/* Texte encadré page index-a */
+.all-pou {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+  margin-left: 10%;
+  margin-right: 9.6%;
+  border-radius: 15px;
+  height: auto;
+}
+
+.all-pou > h1, .pou {
+  margin: 10px;
+  padding: 5px;
+}
+
+.pou {
+  background: white;
+}
+
+.pou  h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+
+.pou h2 {
+    color: gray;
+}
+
+.carousel-item {
+    height: 40vw;
+}
+
+
+
+
+.pag button {
+    background-color: #fff;
+    margin-left: 150px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    width: 22vw;
+
+
+}
+.pag h2 {
+    color: gray;
+    font-size: 3vw;
+}
+
+/* Formulaire */
+.forma {
+    margin-left: 10%;
+}
+
+.forma h1 {
+    color: gray;
+    margin-top: 20px;
+}
+
+
+
+.container a button {
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30%;
+}
+#cine button {
+    border-radius: 15px;
+    margin-top: 25%;
+}
+.cine {
+    display:block;
+    width:50vw;
+    height:400px;
+    background:url(images/platantarctique.jpg) center no-repeat;
+    font-weight:bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 25%;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+
+
+
+.container {
+    color: gray;
+}
+
+
+
+*{font-family:Open Sans;}
+section{width:100%; display:inline-block; background:#9FCBD6; height:60vh; text-align:center; font-size:22px; font-weight:700; text-decoration:underline; color:#DFEEF5;}
+#footer {
+  width: 100%;
+  display: inline-block;
+  margin:0 auto;
+  background:gray;
+  color:#DFEEF5;
+}
+#footer ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+#footer .logo img{
+    width:50px; float:left;
+}
+.lh-footer {
+  width:33%;
+  display: inline-block;
+  margin-left:20px;
+
+}
+#footer h3 {
+    color: #fff;
+}
+
+.mid-footer {
+  margin-left:50px;
+  width:33%;
+  display: inline-block;
+}
+
+.rh-footer {
+  width: 33%;
+  display: inline-block;
+}
+
+@media (max-width:1000px) {
+  #footer{max-width:950px;}
+}
+
+@media (max-width:800px) {
+  .lh-footer, .mid-footer,  .rh-footer{display:block; width:90%; margin:0 auto;}
+}
+
+
+
