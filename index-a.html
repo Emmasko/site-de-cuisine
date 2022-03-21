@@ -1,11 +1,9 @@
-<?php
 
-?>
 
 
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,16 +13,47 @@
 
     
     
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300anddisplay=swap" rel="stylesheet"> 
 </head>
 <body>
+	<div class=" navbar navbar-expand-lg bg-secondary navbar-light">
+        <a href="#" class="navbar-brand"><img class="logo" src="images/cuisine1.jpg" alt="Logo"></a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <b><a class="nav-link" href="index.html"> Accueil</a></b>
+            </li>
+			<li class="nav-item">
+                <b><a class="nav-link" href="index-a.html"> Europe</a></b>
+            </li>
+            <li class="nav-item">
+                <b><a class="nav-link" href="index-a.html"> Afrique</a></b>
+            </li>
+            <li class="nav-item">
+                <b><a class="nav-link" href="index-a.html">Asie</a></b>
+            </li>
+            
+        </ul>   
+    </div>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#"> Europe</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Afrique</a>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Asie</a>
+            </li>
+            
+        </ul>
+</div>
 
 		<div id='conteneur'>
-		    <img id="paragraphe" src="images/Restaurant1.jpg"/>
-		    <img class='image-de-dessus' src="images/restaurant2.jpg"/>
+		    <img id="paragraphe" src="images/Restaurant1.jpg" alt="Restaurant">
+		    <img class='image-de-dessus' src="images/restaurant2.jpg" alt="Restaurant">
 		</div>
 		<div class="pag">
-            <button onclick="rtn()"><h2>Page d'Accueil</h2></button>
+            <h2><button onclick="rtn()">Page d'Accueil</button></h2>
             <script>
                 function rtn() {
                     window.history.back();
@@ -52,7 +81,7 @@
 
 		<div id="cine">
 
-        <a class="cine" href="https://www.tripadvisor.fr/Restaurants-g187091-zfp58-Clermont_Ferrand_Puy_de_Dome_Auvergne_Rhone_Alpes.html"><button>Les Restaurants à Clermont-Ferrand</button></a>
+        <a class="cine" href="https://www.tripadvisor.fr/Restaurants-g187091-zfp58-Clermont_Ferrand_Puy_de_Dome_Auvergne_Rhone_Alpes.html">Les Restaurants à Clermont-Ferrand</a>
 
         <div class="texte">
 
@@ -80,10 +109,12 @@
 		    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		</div>
 		    
 		</div><br><br><br>
 
-		</div>
+		
 
 		<article class="all-pou">
 		  <h1>Restaurants Populaires</h1>
@@ -119,7 +150,7 @@
 		</article>
 
                            
-				<a href="#paragraphe"><button type="button">Haut de page</button></a>
+				<a class="mont" href="#paragraphe">Haut de page</a>
                             
 						
 
@@ -130,7 +161,7 @@
 			        <p>&copy; Emmaskonan 2021. Tous droits réservés</p>
 			  <div class="lh-footer-1">
 			    <div class="logo">
-			      <a href="#"><img src="images/platamerique.jpg"></a>
+			      <a href="#"><img src="images/platamerique.jpg" alt="Plat d'Amérique"></a>
 			    </div>
 			    <p>Lorem ipsum dolor sit amet, feugiat delicat liberavisse id cum no quo. Lorem ipsum dolor sit amet, feugiat delicat liberavisse id cum no quo. Lorem ipsum dolor sit amet, feugiat delicat liberavisse id cum no quo.</p>
 			  </div>
@@ -150,7 +181,8 @@
 			      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			      </p>
-    </div>
+    		  </div>
+		</footer>
 
 
 

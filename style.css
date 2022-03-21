@@ -1,13 +1,22 @@
-
+*{ margin: 0;
+   
+}
 body{
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #f0f0f0;
     box-sizing: border-box;
     overflow-x: hidden;
-    box-shadow: 5px 5px 5px black;
-    margin: auto;
+    margin: 0;
     padding: 0;
     height: 100%;
+    
+
+}
+header {
+    max-width: 1220px;
+    margin: auto;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); /* POUR FAIRE UN CADRE */
+    margin-left: -20px;
 
 }
 
@@ -25,8 +34,18 @@ h1 {
 
 h2 {
     font-size: 150%;
-    
+}  
+
+
+.navbar-brand img {
+    width: 150px;
+    height: 150px;
 }
+.navbar {
+    margin-bottom: 0;
+}
+
+
 
 main h1 {
     color: #fff;
@@ -45,44 +64,12 @@ main {
     max-width: 1220px;
     margin: auto;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); /* POUR FAIRE UN CADRE */
+    
 
 }
 
 /*PARTIE HAUTE HEADER*/
 
-.main-content {
-    background-color: slategray;
-
-}
-.main-content-text a {
-    color: #fff;
-
-}
-
-.main-content-text a:hover {
-    color: #fff;
-
-}
-
-
-.main-content-flex {
-    display: flex;
-    flex: 0 1 40vw; /*VIEWPORT à 40% Largeur de la partie droite*/
-    height: 50vh;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.main-content-img {
-    background: url(images/platamerique.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 50vh;
-    flex: 0 1 50vw; /* Largeur que prend l'image */
-    margin: 0;
-}
 
 .btn {
     padding: 10px 70px;
@@ -107,22 +94,28 @@ main {
 
 /*PARTIE BASSE */
 
-.container-fluid button {
-    color: white;
-    left: 25%;
-    border-width:1px;
-    box-shadow: 3px 3px 3px black;
-    margin-left: 30%;
-    border-radius: 5px;
-    padding: 5px;
-    margin-bottom: 20px;
 
+
+.col .lien {
+    border: solid #ba3627 2px;
+    background-color: #ba3627;
+    color: #f0f0f0;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 100px;
 }
 
-
+.col .lien:hover{
+    color: #f0f0f0;
+    text-decoration: none;
+}
 .col h1{
     color: #ba3627;
 
+}
+.lien {
+    text-decoration: none;
 }
 
 
@@ -130,6 +123,7 @@ main {
     text-align: justify;
     width: 280px;  
 }
+
 
 
 
@@ -144,7 +138,7 @@ main {
 
 .col button {
             background-color: #ba3627;
-            color: #ffff;            
+            color: #fff;            
 }
 .jumbotron {
   height: 30%;
@@ -152,16 +146,11 @@ main {
 }
 
 
-.col button:hover {
-            background-color: #ba3627;
             
-}
 .col {
-  margin-right: 5px;
-  margin-left: 10px
+  margin-right: 2%;
+  margin-left: auto;
 }
-
-
 
 .main-text-img {
     padding: 16px;
@@ -175,26 +164,46 @@ main {
 
 .carousel-item {
     height: 40vw;
+    margin-bottom: 20px;
 }
+.haut {
+    border: solid gray 5px;
+    color: gray;
+    margin-left: 50px;
+    border-radius: 15px;
+    padding: 4px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.haut:hover {
+    color: gray;
+}
+#hat {
+    margin-top: 20px;
+    padding: 50px;
+}
+
 
 /*Footer*/
 
-*{font-family:Open Sans;}
-section{width:100%; display:inline-block; background:#9FCBD6; height:60vh; text-align:center; font-size:22px; font-weight:700; text-decoration:underline; color:#DFEEF5;}
-#footer {
-  width: 80%;
+
+footer {
+  max-width: 1220px;
   display: inline-block;
   margin:0 auto;
   background:gray;
   color:#DFEEF5;
-  margin-left: 10%;
+  margin-bottom: -15px;
+  margin-top: 20px;
+  
+  
 
 }
-#footer ul li a{
+footer ul li a{
     color:#fff;
     text-decoration: none;
 }
-#footer .logo img{
+footer .logo img{
     width:50px; float:left;
 }
 .lh-footer {
@@ -203,7 +212,7 @@ section{width:100%; display:inline-block; background:#9FCBD6; height:60vh; text-
   margin-left:20px;
 
 }
-#footer h3 {
+footer h3 {
     color: #fff;
 }
 
@@ -249,7 +258,8 @@ section{width:100%; display:inline-block; background:#9FCBD6; height:60vh; text-
 #conteneur {
     position:relative;
     height: 500px;
-    width:50vw;
+    width:100vw;
+    
 }
 #conteneur img {
     position:absolute;
@@ -278,10 +288,7 @@ section{width:100%; display:inline-block; background:#9FCBD6; height:60vh; text-
     text-align: justify;
 }
 /* Pour image 2 */
-#cine button {
-    border-radius: 15px;
-    margin-top: 25%;
-}
+
 .cine {
     display:block;
     width:50vw;
@@ -294,6 +301,10 @@ section{width:100%; display:inline-block; background:#9FCBD6; height:60vh; text-
     margin-left: 25%;
     border-radius: 15px;
     margin-bottom: 40px;
+}
+#cine a {
+    color: black;
+    
 }
 
 
@@ -327,21 +338,35 @@ section{width:100%; display:inline-block; background:#9FCBD6; height:60vh; text-
     color: gray;
 }
 
+
 .pag button {
-    background-color: #fff;
-    margin-left: 150px;
     border-radius: 15px;
-    margin-bottom: 20px;
-    width: 22vw;
+    color: #524f4f;
+    margin-left: 50px;
 }
-.pag h2 {
+@media (max-width: 400px) {
+    .pag h2 {
+        font-size: 20px;
+        
+    }
+}
+/* Haut de page */
+.mont {
+    border: solid gray 5px;
     color: gray;
-    font-size: 3vw;
+    margin-left: 50px;
+    border-radius: 15px;
+    padding: 4px;
+   
+}
+.mont:hover {
+    color: gray;
 }
 
 /* Formulaire */
 .forma {
     margin-left: 10%;
+    
 }
 
 .forma h1 {
@@ -351,12 +376,6 @@ section{width:100%; display:inline-block; background:#9FCBD6; height:60vh; text-
 
 
 
-.container a button {
-    border-radius: 15px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-left: 30%;
-}
 
 
 
@@ -398,6 +417,7 @@ section{width:100%; display:inline-block; background:#9FCBD6; height:60vh; text-
   margin:0 auto;
   background:gray;
   color:#DFEEF5;
+  margin-top: 20px;
 }
 
 #footer-1 ul li a{
